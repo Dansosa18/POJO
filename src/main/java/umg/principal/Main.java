@@ -61,7 +61,7 @@ public class Main {
         User usurioObtenido;
         //obtener información del usuario por correo electrónico
         try {
-            usurioObtenido = servicioUsuaio.getUserByEmail("ALopez@gmail.com");
+            usurioObtenido = servicioUsuaio.getUserByidusuario(2);
             System.out.println("Retrieved User: " + usurioObtenido.getNombre());
             System.out.println("Retrieved User: " + usurioObtenido.getCorreo());
             System.out.println("Retrieved User: " + usurioObtenido.getId());

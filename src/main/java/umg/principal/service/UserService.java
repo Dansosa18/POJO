@@ -64,7 +64,7 @@ public class UserService {
         return userDao.getUserByEmail(Email);
     }
 
-    public User getUserByidusuario(String idusuario) throws SQLException {
+    public User getUserByidusuario(int idusuario) throws SQLException {
         return userDao.getUserByidusuario(idusuario);
     }
     public User getUserBycarne(int carne) throws SQLException {

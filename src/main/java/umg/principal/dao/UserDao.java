@@ -115,11 +115,11 @@ public class UserDao {
         }
         return null;
     }
-    public User getUserByidusuario(String idusuario) throws SQLException {
-        String query = "SELECT * FROM tb_usuarios WHERE correo = ?";
+    public User getUserByidusuario(int idusuario) throws SQLException {
+        String query = "SELECT * FROM tb_usuarios WHERE idusuario = ?";
         try (Connection connection = DatabaseConnection.getConnection();
              PreparedStatement statement = connection.prepareStatement(query)) {
-            statement.setString(1, idusuario);
+            statement.setString(1, String.valueOf(idusuario));
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
                 User user = new User();
