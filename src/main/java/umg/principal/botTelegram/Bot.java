@@ -45,7 +45,7 @@ public class Bot extends TelegramLongPollingBot {
             {
                 sendText(chat_id, "orales " + nombre);
             }
-            if (chat_id == 1645907091){
+            if (chat_id == 1533136517){
                 String msg= nombre +"Te saluda";
                 sendText(chat_id, "vos sos un gay+");
             }
